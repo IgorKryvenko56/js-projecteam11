@@ -1,128 +1,122 @@
+
+
+
 /*   ____________________________  mobile   _______________________________________   */
 
 .container-header {
-  box-sizing: border-box;
-  position: absolute;
-  width: 375px;
-  height: 64px;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
-  border: 1.5px solid #111111;
-  border-radius: 0px 0px 8px 8px;
+  padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 375px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1.5px solid #111111;
+    border-radius: 0px 0px 8px 8px;
+    font-family: 'DM Sans', sans-serif;  
+    display: flex;
+    align-items: center;
+  }
   
-}
-
-.header-logo-svg {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-position: absolute;
-width: 109px;
+  .header-logo-svg {
+ 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 109px;
 height: 28px;
-left: 20px;
-top: 18px;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+left: 24px;
+top: 22px;
 
-.header-button {
-width: 152px;
-height: 42px;
-background-color: var(--main-yellow);
-transition: background-color 250ms var(--cubic-bezier);
-border-radius: 10px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-padding: 0;
-display: flex;
-position: absolute;
-bottom: 0;
-right: 0;
-}
+  }
 
-
-.burger {
-  width: 28px;
+.logo {
+  font-family: 'DM Sans', sans-serif;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 109px;
   height: 28px;
-  flex: none;
+  left: 24px;
+  top: 22px;
+  color: black;
+
+}
+
+.icon-logo {
+  margin-left: 24px;
+  margin-right: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+.bookshelf {
+  
+  color: #000000;
   order: 1;
   flex-grow: 0;
-}
-    
-.header-button-span-text {
-width: 46px;
-height: 18px;
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
-letter-spacing: -0.04em;
-color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-
-@media screen and (max-width: 767px)  {
-
-.header-button {
-display: none;
-}
-
-.container-header {
-  box-sizing: border-box;
-  position: absolute;
-  width: 375px;
-  height: 64px;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
-  border: 1.5px solid #111111;
-  border-radius: 0px 0px 8px 8px;
-  
-}
-  .logo {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-position: absolute;
-width: 109px;
-height: 28px;
-left: 20px;
-top: 18px;
-
-  }    
-  
-.burger {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 14px;
-
-position: absolute;
-width: 82px;
-height: 28px;
-left: 273px;
-top: 18px;
+  margin-left: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 4px;
   }
-    
-}
-    
-    
-@media screen and (min-width: 480px) {
-
+  
+  .header-button {
+  width: 152px;
+  height: 42px;
+  background-color: var(--main-yellow);
+  transition: background-color 250ms var(--cubic-bezier);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  }
+  
+  
+  .burger {
+    width: 28px;
+    height: 28px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+      
+  .header-button-span-text {
+  width: 46px;
+  height: 18px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+  }
+  
+  @media screen and (max-width: 767px)  {
+  
+  .header-button {
+  display: none;
+  }
+  
   .container-header {
     box-sizing: border-box;
     position: absolute;
@@ -133,131 +127,250 @@ top: 18px;
     background: #FFFFFF;
     border: 1.5px solid #111111;
     border-radius: 0px 0px 8px 8px;
-    
+    align-items: center;
+    display: flex;
   }
-        
-.header-button {
-display: none;
-}
-    
-}
-   
-    
-    /*   ____________________________  planschet   _______________________________________   */
-    
-@media screen and (min-width: 768px) {
-
-  .container-header {
-    box-sizing: border-box;
-    position: absolute;
-    width: 768px;
-    height: 72px;
-    left: 0px;
-    top: 0px;
-    
-    background: #FFFFFF;
-    border: 1.5px solid #111111;
-    border-radius: 0px 0px 8px 8px;
-    }
-        
-.burger {
-display: none;
-    }
-
-
-.header-button {
-position: absolute;
-width: 184px;
-height: 45px;
-left: 552px;
-top: 14px;
-box-sizing: border-box;
-background: #4F2EE8;
-border: 1.5px solid #111111;
-border-radius: 18px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-padding: 0;
-display: flex;
+    .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
   
-  }
+  position: absolute;
+  width: 109px;
+  height: 28px;
+  left: 20px;
+  top: 18px;
+  
+    } 
     
+    .bookshelf {
+  
+      color: #000000;
+      order: 1;
+      flex-grow: 0;
+      margin-left: 30px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 4px;
+      }
+
+      .icon-logo {
+        margin-left: 24px;
+        margin-right: 8px;
+        height: 24px;
+        width: 24px;
+      }
     
+  .burger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+  
+  position: absolute;
+  width: 82px;
+  height: 28px;
+  left: 273px;
+  top: 18px;
+    }
+
+    .header-logo-svg {
+ 
+     
+      left: auto;
+      top: auto;
+      
+        }
+      
   }
       
-@media screen and (min-width: 768px) and (max-width: 1199px){
-
-  .container-header {
-    box-sizing: border-box;
-    position: absolute;
-    width: 768px;
-    height: 72px;
-    left: 0px;
-    top: 0px;
-    
-    background: #FFFFFF;
-    border: 1.5px solid #111111;
-    border-radius: 0px 0px 8px 8px;
+      
+  @media screen and (min-width: 480px) {
+  
+    .container-header {
+      box-sizing: border-box;
+      position: absolute;
+      width: 375px;
+      height: 64px;
+      left: 0px;
+      top: 0px;
+      background: #FFFFFF;
+      border: 1.5px solid #111111;
+      border-radius: 0px 0px 8px 8px;
+      align-items: center;
+      display: flex;
     }
-        
-
-.header-button {
-position: absolute;
-width: 184px;
-height: 45px;
-left: 552px;
-top: 14px;
-box-sizing: border-box;
-background: #4F2EE8;
-border: 1.5px solid #111111;
-border-radius: 18px;
-               
-              
-}
-    
-    
-}
-    
-
-    
-/*   ____________________________  dask-top   _______________________________________   */
-    
-    
-    
-@media screen and (min-width: 1200px) {
-
-  .container-header {
-    box-sizing: border-box;
-    width: 1440px;
-    height: 72px;
-    left: 0px;
-    top: 0px;
-    
-    background: #FFFFFF;
-    border: 1.5px solid #111111;
-    border-radius: 0px 0px 8px 8px;
+          
+  .header-button {
+  display: none;
   }
 
-.burger {
-display: none;
-}
+  .icon-logo {
+    margin-left: 24px;
+    height: 24px;
+    width: 24px;
+  }
 
-.header-button {
-position: absolute;
-width: 184px;
-height: 48px;
-left: 1232px;
-top: 12px;
-box-sizing: border-box;
-background: #4F2EE8;
-border: 1.5px solid #111111;
-border-radius: 18px;
-       
-}
-
-}
-
+  .bookshelf {
+  
+    color: #000000;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 4px;
+    }
+      
+    .header-logo-svg {
+ 
+     
+    left: auto;
+    top: auto;
     
+      }
+
+  }
+     
+      
+      /*   ____________________________  planschet   _______________________________________   */
+      
+  @media screen and (min-width: 768px) {
+  
+    .container-header {
+      box-sizing: border-box;
+      position: absolute;
+      width: 768px;
+      height: 72px;
+      left: 0px;
+      top: 0px;
+      display: flex;
+      background: #FFFFFF;
+      border: 1.5px solid #111111;
+      border-radius: 0px 0px 8px 8px;
+      align-items: center;
+      }
+
+      .bookshelf {
+  
+        color: #000000;
+        order: 1;
+        flex-grow: 0;
+        margin-left: 30px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 4px;
+        }
+          
+  .burger {
+  display: none;
+      }
+  
+  
+  .header-button {
+  position: absolute;
+  width: 184px;
+  height: 45px;
+  left: 552px;
+  top: 14px;
+  box-sizing: border-box;
+  background: #4F2EE8;
+  border: 1.5px solid #111111;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  display: flex;
     
+    }
+      
+      
+    }
+        
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+  
+    .container-header {
+      box-sizing: border-box;
+      position: absolute;
+      width: 768px;
+      height: 72px;
+      left: 0px;
+      top: 0px;
+      align-items: center;
+      background: #FFFFFF;
+      border: 1.5px solid #111111;
+      border-radius: 0px 0px 8px 8px;
+      display: flex;
+      }
+          
+  
+  .header-button {
+  position: absolute;
+  width: 184px;
+  height: 45px;
+  left: 552px;
+  top: 14px;
+  box-sizing: border-box;
+  background: #4F2EE8;
+  border: 1.5px solid #111111;
+  border-radius: 18px;
+                 
+                
+  }
+      
+      
+  }
+      
+  
+      
+  /*   ____________________________  dask-top   _______________________________________   */
+      
+      
+      
+  @media screen and (min-width: 1200px) {
+  
+    .container-header {
+      box-sizing: border-box;
+      width: 1440px;
+      height: 72px;
+      left: 0px;
+      top: 0px;
+      align-items: center;
+      background: #FFFFFF;
+      border: 1.5px solid #111111;
+      border-radius: 0px 0px 8px 8px;
+      display: flex;
+    }
+  
+  .burger {
+  display: none;
+  }
+  
+  .header-button {
+  position: absolute;
+  width: 184px;
+  height: 48px;
+  left: 1232px;
+  top: 12px;
+  box-sizing: border-box;
+  background: #4F2EE8;
+  border: 1.5px solid #111111;
+  border-radius: 18px;
+         
+  }
+  
+  }
+
     
