@@ -1,17 +1,20 @@
 
 //  ============================== MODAL WINDOW =============================
 
+
 .top-books {
     color: var(--text-dark);
     font-size: 32px;
     line-height: 38px;
-    margin-top: 764px;
+    // margin-top: 764px;
     margin-left: 20px;
 }
 
 .books {
     color: var(--active-category-color)
-};
+}
+
+;
 
 .type-of-books {
     color: var(--light-grey);
@@ -19,15 +22,21 @@
     margin-bottom: 18px;
 }
 
+.book-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
 .img-card {
     list-style: none;
-    min-width: 335px;
+    max-width: 335px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 
 }
-
 .book-info {
     margin-top: 14px;
     margin-bottom: 8px;
@@ -39,24 +48,24 @@
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 4px;
-    
+
 
 }
 
-.book-author{
+.book-author {
 
     font-size: 12px;
     line-height: 14px;
     color: #B4AFAF;
-    
-    
+
+
 
 
 }
+
 .see-more-btn {
-    display: inline-flex;
+    display: inline-block;
     justify-content: center;
-    margin-left: 200px;
     font-size: 14px;
     line-height: 18px;
     font-weight: 700;
@@ -68,7 +77,9 @@
     margin-bottom: 40px;
     color: var(--text-dark);
     cursor: pointer;
-};
+}
+
+;
 
 #scroll-top {
     position: fixed;
@@ -86,9 +97,59 @@
     border-radius: 50px;
 }
 
-// .scroll-arrow {
-  
-// }
 
 
 // =============================== TABLET ============================================
+
+@media screen and (min-width: 768px){
+
+    .top-books {
+    font-size: 48px;
+    line-height: 52px;
+           
+        }
+
+    .type-of-books {
+
+        font-size: 14px;
+    }
+
+        .book-info {
+            margin-top: 14px;
+            margin-bottom: 20px;
+            
+    
+        }
+    
+
+   .img-card {
+
+    width: calc((100% - 75px) / 3);
+    
+    
+    
+   } 
+
+   .img-font-page {
+
+    max-height: 316px;
+   }
+
+   
+
+   
+
+};
+
+
+// ============================ DESKTOP ======================================
+
+// @media screen and (min-width: 1440px) {
+
+//     .img-card {
+//      width: calc((100% - 96px) /5);
+    
+//  }
+
+
+// }

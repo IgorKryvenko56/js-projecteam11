@@ -1,3 +1,5 @@
+
+
 fetch('https://books-backend.p.goit.global/books/top-books', {
   method: 'GET',
   headers: { accept: 'application/json' },
@@ -69,6 +71,9 @@ function buildTopBooksMarkup({ books }) {
   
   }
 };
+
+
+
 
 
   
