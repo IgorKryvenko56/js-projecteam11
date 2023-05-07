@@ -106,6 +106,8 @@
     .top-books {
     font-size: 48px;
     line-height: 52px;
+    margin-top: 612px;
+    margin-left: 0px;
            
         }
 
@@ -144,12 +146,12 @@
 
 // ============================ DESKTOP ======================================
 
-// @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
 
-//     .img-card {
-//      width: calc((100% - 96px) /5);
+    .img-card {
+     width: calc((100% - 96px) /5);
     
-//  }
+ }
 
 
-// }
+}
