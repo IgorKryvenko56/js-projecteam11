@@ -1,7 +1,14 @@
 
-
-
 /*   ____________________________  mobile   _______________________________________   */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
 
 .container-header {
   padding: 15px;
@@ -46,7 +53,6 @@ top: 22px;
   height: 28px;
   left: 24px;
   top: 22px;
-  color: black;
 
 }
 
@@ -85,6 +91,14 @@ top: 22px;
   bottom: 0;
   right: 0;
   }
+
+  .header-button-svg {
+width: 20px;
+height: 20px;
+flex: none;
+order: 1;
+flex-grow: 0;
+  }
   
   
   .burger {
@@ -93,7 +107,9 @@ top: 22px;
     flex: none;
     order: 1;
     flex-grow: 0;
+
   }
+
       
   .header-button-span-text {
   width: 46px;
@@ -372,5 +388,3 @@ top: 22px;
   }
   
   }
-
-    
