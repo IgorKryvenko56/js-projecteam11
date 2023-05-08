@@ -1,8 +1,9 @@
 import './js/slider';
 import './js/modal';
-import './js/catrgories-list';
-import './js/bestsellers-list';
+import './js/categories-list';
+// import './js/bestsellers-list';
+import './js/bestsellers-list2';
 import './js/chosen-category';
 import './js/book-profile';
-import './js/scroll-to-top';
-import './js/see-more';
+import './js/async-fetch';
+import './js/scroll-to-top'
