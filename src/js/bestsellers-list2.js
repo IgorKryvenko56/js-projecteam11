@@ -1,4 +1,4 @@
-import axios, { all } from 'axios';
+//import axios, { all } from 'axios';
 import openBookProfile from './book-profile';
 const groupsContainers = document.querySelector('.render-container');
 
