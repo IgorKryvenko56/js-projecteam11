@@ -7,3 +7,4 @@ import './js/categories-list';
 import './js/book-profile';
 //import './js/async-fetch';
 import './js/scroll-to-top';
+import './js/book_modal';
